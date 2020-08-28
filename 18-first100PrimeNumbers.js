@@ -1,4 +1,18 @@
-export const isPrime = function isPrime(num){
+
+function firstHundredPrime(){
+    n = 0
+    p = 0
+    while(i < 100){
+        if(isPrime(j)){
+            console.log(j)
+            i++
+        }
+        j++
+    }
+}
+firstHundredPrime()
+
+function isPrime(num){
     if (num < 2){
         return false;
     }
@@ -6,7 +20,6 @@ export const isPrime = function isPrime(num){
         return true;
     }else{
     for (var i = 2; i < num; i++){
-        console.log( `${num} ${i}`)
         if(num % i === 0){
             return false
         }
@@ -14,7 +27,4 @@ export const isPrime = function isPrime(num){
     return true
 }
 }
-
-var prime = isPrime(17)
-console.log(prime)
 
