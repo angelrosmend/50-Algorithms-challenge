@@ -9,3 +9,14 @@ function printOddNumbers(){
 }
 
 printOddNumbers()
+
+//Recursion approach
+function collectOdds(num){
+    if(num === 0)return;
+    if(num % 2 === 1){
+        console.log(num)
+    }
+    num--;
+    collectOdds(num)
+}
+collectOdds(100)
