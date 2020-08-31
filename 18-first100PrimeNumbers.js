@@ -2,12 +2,12 @@
 function firstHundredPrime(){
     n = 0
     p = 0
-    while(i < 100){
-        if(isPrime(j)){
-            console.log(j)
-            i++
+    while(p < 100){
+        if(isPrime(n)){
+            console.log(n)
+            p++
         }
-        j++
+        n++
     }
 }
 firstHundredPrime()
@@ -23,8 +23,7 @@ function isPrime(num){
         if(num % i === 0){
             return false
         }
-    }
-    return true
+    } return true
 }
 }
 
