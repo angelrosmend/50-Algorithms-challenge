@@ -1,18 +1,32 @@
+
+
 //Create a function that will add two indefinite size numbers.
 
-var n1 = "2545884345874"
-var n2 = "7274876876485"
+var n1 = '125'
+var n2 = "175"
 
-function add(sNum1. sNum2){
+var sum= add(n1, n2);
+//console.log(n1, "\n", n2, "\n", sum)
+
+function add(sNum1, sNum2){
     var str = "";
-    vr carry = 0;
+    var carry = 0;
 
     var maxSize = Math.max(sNum1.length, sNum2.length);
 
     for(var i = 0; i < maxSize; i++){
         var digit1 = digitFromRight(sNum1, i);
-        var digit2 = digitFromRight(sNum2, i)
+        var digit2 = digitFromRight(sNum2, i);
+
+        var sum = digit1 + digit2 + carry;
+        var digitSum = sum % 10;
+        carry = sum >= 10 ? 1 : 0;
+
+        str = digitSum.toString() + str;
     }
+    if (carry > 0)
+    s = carry + str;
+    return str
 }
 
 
@@ -26,3 +40,5 @@ function digitFromRight(str, digitNo){
     return parseInt(char)
 
 }
+
+console.log(sum)
