@@ -14,5 +14,6 @@ function uniqueValues(arr1, arr2){
     return newArr;
 }
 
+
 var array = uniqueValues(array1,array2)
 console.log(array)
