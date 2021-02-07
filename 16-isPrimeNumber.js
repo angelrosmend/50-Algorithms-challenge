@@ -15,6 +15,7 @@ export const isPrime = function isPrime(num){
 }
 }
 
+
 var prime = isPrime(17)
 console.log(prime)
 
